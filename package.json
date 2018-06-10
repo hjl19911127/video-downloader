@@ -1,0 +1,16 @@
+{
+  "name": "video-downloader",
+  "version": "1.0.0",
+  "description": "video-downloader",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Huang",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "iconv-lite": "^0.4.23",
+    "request": "^2.87.0"
+  }
+}

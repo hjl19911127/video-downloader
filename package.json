@@ -11,6 +11,8 @@
   "license": "GPL-3.0",
   "dependencies": {
     "iconv-lite": "^0.4.23",
-    "request": "^2.87.0"
+    "mkdirp": "^0.5.1",
+    "request": "^2.87.0",
+    "require-from-string": "^2.0.2"
   }
 }

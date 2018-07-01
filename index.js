@@ -14,7 +14,7 @@ const requireFromString = require('require-from-string')
 const request = require('request')
 const mkdirp = require('mkdirp')
 const requestWorker = require('./request')
-let termId = 2001392029;
+let termId = 2001391036;
 let httpSessionId = '4fc286b146c34167a571129c2559fa4a'
 function writeLine(text) {
     readline.clearLine(process.stdout);
@@ -35,7 +35,7 @@ let options = {
         "DNT": 1,
         "X-Requested-With": "XMLHttpRequest",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36",
-        "Cookie": 'usertrack=ezq0pVqtHA6esf5GUPqLAg==; TS01ca291d=012341c549dc5bfd5841528baabb518ba4235f1aba6fbc146721d6480364c63ab0a6be1198833290c36930c691a7e1a522784402c36388d7d7f678b41cea399e2a806792f8; _ntes_nnid=6beec0ca530256d94488ed10c0473d0f,1521294396761; _ntes_nuid=6beec0ca530256d94488ed10c0473d0f; __utma=187553192.2027475484.1525595917.1525595917.1525595917.1; __utmc=187553192; __utmz=187553192.1525595917.1.1.utmcsr=open.163.com|utmccn=(referral)|utmcmd=referral|utmcct=/; __oc_uuid=de4f7e60-5108-11e8-b228-ab361d39455f; EDUWEBDEVICE=9d920ca60cf54eebb54a56ea60605d9f; __utmc=129633230; __f_=1525596026046; __e_=1525596159562; STUDY_MIND_TELBIND_CLOSE=1; videoResolutionType=3; hb_MA-BFF5-63705950A31C_source=www.baidu.com; __utmz=129633230.1528599819.23.8.utmcsr=baidu|utmccn=(organic)|utmcmd=organic; NTESSTUDYSI=4fc286b146c34167a571129c2559fa4a; utm="eyJjIjoiIiwiY3QiOiIiLCJpIjoiIiwibSI6IiIsInMiOiIiLCJ0IjoiIn0=|aHR0cDovL3N0dWR5LjE2My5jb20vbWVtYmVyL2xvZ2luLmh0bT9yZXR1cm5Vcmw9YUhSMGNEb3ZMM04wZFdSNUxqRTJNeTVqYjIwdmJYay4="; NTES_SESS=ojbiixCtrJOuhicNT5UkkFzVeFCEjc_cRkxcYOEuNjQqbX4tbOxW2S.OyRGRE5_A_fu7yrYDm77coAgLJfgHfKbhGrabwRK_wpRmgM5WG27ltghuTMgp3JI66KoAAqIAeUPIw.418YYLOIeKvuhr1SwRafYyJirjEzaqUxerQZ.hzpJrrVhzS03LRXDNmdz5C1DNFbVTOJtyl5XuTxwooOfKL; NTES_PASSPORT=jUfUbDSXCxH.xYuF.EhD3xBAJlny7VwClWcVNjeWtesNMmy6MT5QSOHTtD9Dq_ihiyMgXwJwADtYStwnGndGgcxZkjhjVQF9R9udA3VnUOF5e2W4VmMxkYqgvHeqWSb9lLse7Gi6rN_BL51Bjg1VduPmXdh6ejMXANKcA2Lx6ciU7eP89HLUMJIhQ; S_INFO=1528818397|0|3&100##|hjl4347570; P_INFO=hjl4347570@163.com|1528818397|1|study|11&14|fuj&1528772131&study#fuj&350100#10#0#0|183659&0|study&blog|hjl4347570@163.com; STUDY_INFO="hjl4347570@163.com|-1|1029324064|1528818397858"; STUDY_SESS="HcBHVu4MLhZzw5GW5hhvyNHTOFzcoNVV6gPAPW8rI1knQQJZYkVrdACXJWPoeKc4eZkR3sb0GHAMfItZDHavaIhp35Pj/T2kE6I+0e6AmO3C9KL2nIO9FIkoXxLc1t38v6mZVZ7w/XPlCGvgto7iCSfRII5t5z6JUn8uqQgJ2A0vhQFx7kzH+3GA01euhE5D"; STUDY_PERSIST="4PJxiBH8H3n870h0EGWQcELyntZh9jo89yEqFBxE01yFQiEBpsE01C1CkGyHlTUwrTnpYuH5cooa3w5gdlcR5HhEZW2NtgqJHvMJ/ySLnK4YIDV+8X31mVLviy8C7bTaoOnLNMgjpUFUcgSUOAvasv9xkoWKK04L+VdummcF71Izx/ofz/dy8dplb8rNIXyQvj4nh0khWgVVlvbkvWAf/QiZDg3/uQPm3nciKqPLAn637Weq4j/S2qU01oFrl7Ms8WQLi3xTJ45sq/acjsEWiA=="; NETEASE_WDA_UID=1029324064#|#1504077606513; __utma=129633230.774576541.1525596023.1528772223.1528818421.29; NTES_STUDY_YUNXIN_ACCID=s-1029324064; NTES_STUDY_YUNXIN_TOKEN=adf3afc23d2b7a55b1e9d994bf32d276; sideBarPost=624; __utmb=129633230.7.9.1528818443664',
+        "Cookie": 'usertrack=ezq0pVqtHA6esf5GUPqLAg==; TS01ca291d=012341c549dc5bfd5841528baabb518ba4235f1aba6fbc146721d6480364c63ab0a6be1198833290c36930c691a7e1a522784402c36388d7d7f678b41cea399e2a806792f8; _ntes_nnid=6beec0ca530256d94488ed10c0473d0f,1521294396761; _ntes_nuid=6beec0ca530256d94488ed10c0473d0f; __utma=187553192.2027475484.1525595917.1525595917.1525595917.1; __utmc=187553192; __utmz=187553192.1525595917.1.1.utmcsr=open.163.com|utmccn=(referral)|utmcmd=referral|utmcct=/; __oc_uuid=de4f7e60-5108-11e8-b228-ab361d39455f; EDUWEBDEVICE=9d920ca60cf54eebb54a56ea60605d9f; __utmc=129633230; __f_=1525596026046; __e_=1525596159562; STUDY_MIND_TELBIND_CLOSE=1; NTESSTUDYSI=4fc286b146c34167a571129c2559fa4a; NETEASE_WDA_UID=1029324064#|#1504077606513; sideBarPost=624; __utmz=129633230.1529109188.30.9.utmcsr=study.163.com|utmccn=(referral)|utmcmd=referral|utmcct=/my; NTES_SESS=hUwjLx_g0N3jLy2WgyJvXzyFsKqOcTxx.e3wxbWKCDcQgN.agb3pG95bH2t2WuV0VzKAHyxSLAAwh0qZnzq_zIgvtyigT2IVTB2Lq7uptGA1aqvKM7qBFnrEEIh00Qr0sYmrT5.XoxxZbrsIlKvyX9T2izxHnjyDW4iQY3sycU5v4BnyyRv49JFZ2NSCL84ukXSCfgRMbnaH1uNKM3ThhbzIZ; S_INFO=1529109291|0|3&100##|hjl4347570; P_INFO=hjl4347570@163.com|1529109291|1|study|11&14|fuj&1528820906&youdaodict_client#fuj&350100#10#0#0|183659&0|youdaodict_client&study&blog|hjl4347570@163.com; hb_MA-BFF5-63705950A31C_source=mooc.study.163.com; cdnName=; videoResolutionType=3; STUDY_INFO="hjl4347570@163.com|-1|1029324064|1530367064394"; STUDY_SESS="HcBHVu4MLhZzw5GW5hhvyNHTOFzcoNVV6gPAPW8rI1knQQJZYkVrdACXJWPoeKc4ddjlxb5VYpGsS5tirUA61zT3fxVm7v4RQM3ew/hqus43QtuXcVMObKz0RRR/08a8VXGAGJpaEAYXDuEk8v+LYNZsAG5tJiZ1etgETM6RdpwvhQFx7kzH+3GA01euhE5D"; STUDY_PERSIST="4PJxiBH8H3n870h0EGWQcELyntZh9jo89yEqFBxE01yFQiEBpsE01C1CkGyHlTUwrTnpYuH5cooa3w5gdlcR5JCqnAzjcD8mWloGDRMcj6dgfuPaMPGZMNFKpM1mHkT8uZkIqwNGAHOEpXloMQnt1ARMrj++ob+LdN+qrqdmaa+DrXsn5/WpikRCMUXManKdA3hVVEamW2PsTbsZQkwKpD7KcLSTxZzzOOb0h9qT3pO37Weq4j/S2qU01oFrl7Ms8WQLi3xTJ45sq/acjsEWiA=="; NTES_STUDY_YUNXIN_ACCID=s-1029324064; NTES_STUDY_YUNXIN_TOKEN=adf3afc23d2b7a55b1e9d994bf32d276; __utma=129633230.774576541.1525596023.1530367067.1530367139.41; utm="eyJjIjoiIiwiY3QiOiIiLCJpIjoiIiwibSI6IiIsInMiOiIiLCJ0IjoiIn0=|aHR0cDovL3N0dWR5LjE2My5jb20vbXk="; __utmb=129633230.15.9.1530450436450',
         "Host": "mooc.study.163.com",
         "Origin": "http://mooc.study.163.com",
         "Referer": "http://mooc.study.163.com/learn/2001281002?tid=2001392029"
@@ -71,7 +71,7 @@ async function download(url, path, filename) {
     })
 }
 async function exec() {
-    let res, distPath = 'dist';
+    let res, distPath = 'dist/' + termId;
 
     //所有课件
     options.url = 'http://mooc.study.163.com/dwr/call/plaincall/CourseBean.getLessonUnitLearnVo.dwr?1528600086192'
@@ -100,6 +100,7 @@ async function exec() {
             for (let unitIndex = 0; unitIndex < units.length; unitIndex++) {
                 let { name: unitName, contentId, contentType, id } = units[unitIndex];
                 unitName = formatPath(unitName)
+                if (fs.existsSync(pathToLesson + '/' + `${unitName}.mp4`)) continue;
                 //单个课件
                 options.url = 'http://mooc.study.163.com/dwr/call/plaincall/CourseBean.getLessonUnitLearnVo.dwr?1528600086192'
                 options.body = Object.entries({
@@ -119,6 +120,7 @@ async function exec() {
                     return `${key}=${value}`
                 }).join('\n')
                 options.method = 'POST'
+                console.log(options)
                 res = await requestWorker(options)
                 if (contentType == 1) {
                     let suffix;
@@ -157,5 +159,13 @@ async function exec() {
             }
         }
     }
+}
+
+async function sleep(s) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve()
+        }, s * 1000)
+    })
 }
 exec()
